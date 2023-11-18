@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
   world.Inject(*new_org);
   world.Resize(10,10);
 
-  for(int update=0; update<400; update++){
+  for(int update=0; update<20000; update++){
     world.Update();
   }
 }

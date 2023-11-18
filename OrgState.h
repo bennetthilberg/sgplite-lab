@@ -16,6 +16,12 @@ struct OrgState {
   //How many points this organism has currently
   double points;
 
+  //Has this org successfully performed a task before?
+  bool task_succeeded;
+
+  //Has this org been counted towards successfulOrgs before?
+  bool countedSuccess = false;
+
   //Needs to know current location for possible reproduction
   emp::WorldPosition current_location;
 
